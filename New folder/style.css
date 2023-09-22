@@ -5,6 +5,7 @@
 }
 .d{
     display: flex;
+    margin-right: 50px;
 }
 section p{
     margin-left: 50px;
@@ -28,25 +29,45 @@ section p::first-letter{
 }
 #img-bott{
     height: 500px;
-    width: 700px;
+    width: 800px;
     border-radius: 5px;
+    margin-right: 5px;
 }
-.img2{
+/* .img2{
     height: 500px;
     width: 600px;
     border-radius: 5px;
-}
+    margin-right: 10px;
+} */
 .img3{
     height: 500px;
     width: 300px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.img4{
+    border-radius: 5px;
+    height: 500px;
 }
 .pclass{
     color: aqua;
 }
 #pid{
-    color: blueviolet !important;
+    color: blueviolet ;
 }
-#pid::first-letter{
+#pid::before{
     content: "Starting paragraph";
     font-size: small;
+}
+.pclass::after{
+    content: "ending paragraph";
+    font-size: small;
+}
+.p2class{
+    color:darkorange !important;
+}
+div{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
 }
