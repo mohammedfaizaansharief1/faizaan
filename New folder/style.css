@@ -1,7 +1,16 @@
 *{
     font-family: 'Ubuntu', sans-serif;
     color: black;
-    background-color: beige;
+    /* background-color: beige; */
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+}
+body{
+    /* background-image: linear-gradient(to right, blueviolet, green, yellow); */
+    /* background-color: #8EC5FC; */
+    /* background-image: linear-gradient(to right, #8EC5FC 0%, #E0C3FC 100%); */
+    /* background-image: linear-gradient(to right,orange,green,violet); */
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 .d{
     display: flex;
@@ -13,12 +22,20 @@ section p{
 button>a{
     text-decoration: none;
     background: none;
+    color:brown;
 }
+
+content: "\2192";
+
 button{
-    padding: 5px;
+    padding: 8px;
+    background-color: yellow;
+    border: none;
+    border-radius: 3px;
 }
 button:hover{
     background-color: black;
+    cursor: pointer;
 }
 button>a:hover{
     color: white;
@@ -33,6 +50,9 @@ section p::first-letter{
     border-radius: 5px;
     margin-right: 5px;
 }
+#img-bott:hover{
+    box-shadow: 1px 1px 10px black;
+}
 /* .img2{
     height: 500px;
     width: 600px;
@@ -45,9 +65,15 @@ section p::first-letter{
     border-radius: 5px;
     margin-right: 5px;
 }
+.img3:hover{
+    box-shadow: 1px 1px 10px black;
+}
 .img4{
     border-radius: 5px;
     height: 500px;
+}
+.img4:hover{
+    box-shadow: 1px 1px 10px black;
 }
 .pclass{
     color: aqua;
