@@ -11,6 +11,9 @@ body{
     /* background-image: linear-gradient(to right, #8EC5FC 0%, #E0C3FC 100%); */
     /* background-image: linear-gradient(to right,orange,green,violet); */
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .d{
     display: flex;
@@ -25,7 +28,7 @@ button>a{
     color:brown;
 }
 
-content: "\2192";
+content: "2192";
 
 button{
     padding: 8px;
@@ -96,4 +99,11 @@ div{
     display: flex;
     margin-left: 50px;
     margin-right: 50px;
+}
+#img5{
+    /* height: 500px; */
+    width: 800px;
+}
+#img6{
+    margin-left: 20px;
 }
