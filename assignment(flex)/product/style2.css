@@ -1,0 +1,30 @@
+.card1{
+    height: 457px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+img{
+    width: 334px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 8px;
+}
+.content ul{
+    font-family: 'Inter', sans-serif;
+    list-style-type: none;
+    padding: 0px 25px;
+    line-height: 40px;
+}
+.content ul span{
+    background-color: aqua;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
