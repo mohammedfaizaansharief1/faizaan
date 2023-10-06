@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+}
+.post{
+    width: 416px;
+    height: 108px;
+    border-radius: 16px;
+    background-color: wheat;
+    display: flex;
+    position: relative;
+}
+.logo-name{
+    margin-left: 16px;
+    /* background-color: white; */
+    width: 384px;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 8px;
+}
+.logo-name img{
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    /* margin-top: 40px; */
+}
+.logo-name p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #536471;
+}
+.social{
+    width: 416px;
+    height: 52px;
+    /* background-color: red; */
+    position: absolute;
+    margin-top: 55px;
+    border-radius: 16px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.social .icons{
+    width: 104px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    margin-top: 8px;
+    /* background-color: aqua; */
+    color: #536471;
+}
+.icons img{
+    height: 24px;
+    width: 24px;
+    
+    color: #536471;
+
+}
+#i2{
+    margin-left: 16px;
+    margin-right: 16px;
+    color: #536471;
+}
