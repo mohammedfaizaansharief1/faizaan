@@ -1,0 +1,25 @@
+.container{
+    height: 600px;
+    width: auto;
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 1fr 100px;
+    gap: 10px;
+}
+.item{
+    background-color:orange;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header{
+    width: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
