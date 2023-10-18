@@ -3,3 +3,51 @@
 
 /* font-family: 'Cardo', serif;
 font-family: 'Inter', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1B3764;
+    color: #fff;
+}
+header{
+    /* padding: 310px; */
+}
+nav{
+    display: flex;
+    width: 1299.25px;
+    background-color: aqua;
+    align-items: center;
+    /* gap: 251px; */
+    height: auto;
+}
+.navbar{
+    /* margin-left: 310px; */
+    margin-top: 40px;
+}
+ul li{
+    list-style: none;
+}
+.links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.logo{
+    display: flex;
+    width: 306.25px;
+    align-items: center;
+    gap: 33px;
+}
+.logo img{
+    width: 24px;
+    height: 28px;
+}
+button{
+    display: flex;
+    padding: 13px 33px;
+    justify-content: center;
+    align-items: center;
+}
