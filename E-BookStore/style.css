@@ -50,4 +50,9 @@ button{
     padding: 13px 33px;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
+    background-color: #FFCA42;
+    border: none;
+    color: #1B3764;
+    font-family: 'cardo';
 }

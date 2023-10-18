@@ -1,24 +1,52 @@
 body{
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .main{
-    width: 70%;
+    /* width: 70vw; */
     background-color: black;
-
 }
 .container{
     background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .first{
     display: flex;
+    padding-bottom: 50px;
 }
 .first img{
+    width: 250px;
+}
+.text{
+    padding: 0px 40px;
+    width: 510px   
+}
+.pic #1{
+    z-index: 0;
+}
+.pic #2{
+    z-index: 1;
+}
+.pic #3{
+    z-index: 2;
+}
+
+.second{
+    display: flex;
+    padding-bottom: 50px;
+}
+.second img{
+    width: 250px;
+}
+
+.third{
+    display: flex;
+}
+.third img{
     width: 250px;
 }
