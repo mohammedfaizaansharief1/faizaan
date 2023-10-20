@@ -1,5 +1,5 @@
 body{
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,6 +7,8 @@ body{
 .main{
     /* width: 70vw; */
     background-color: black;
+    height: 100%;
+    width: 100%;
 }
 .container{
     background-color: aqua;
@@ -14,31 +16,53 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 .first{
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    height: 30%;
+    width: 100%;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
 }
-.first img{
-    width: 250px;
+.first .pic img{
+    width: 200px;
+    position: absolute;
 }
 .text{
     padding: 0px 40px;
-    width: 510px   
+    /* width: 50%; */
+    width: 500px;
 }
-.pic #1{
+.pic{
+    width:50%;
+    height: 250px;
+    position: relative;
+    border: 2px solid black;
+}
+.pic .img1{
     z-index: 0;
 }
-.pic #2{
-    z-index: 1;
-}
-.pic #3{
+.pic .img2{
     z-index: 2;
+    top: 120px;
+    left: 30px;
+}
+.pic .img3{
+    z-index: 1;
+    bottom: 60px;
+    left: 140px;
+    top: 40px;
 }
 
 .second{
     display: flex;
     padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
 }
 .second img{
     width: 250px;
@@ -46,6 +70,8 @@ body{
 
 .third{
     display: flex;
+    /* height: 100px; */
+    width: 100px;
 }
 .third img{
     width: 250px;
