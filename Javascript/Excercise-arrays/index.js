@@ -24,6 +24,7 @@ console.log(itCompanies.join(","))
 for(var i=0;i<itCompanies.length-1;i++){
     if(itCompanies[i]=='Apple'){
         console.log(itCompanies[i])
+        // break
     }
     // else{
     //     console.log('company not found')
