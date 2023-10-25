@@ -31,3 +31,6 @@ for(var i=0;i<itCompanies.length-1;i++){
     // }
 }
 // console.log(itCompanies.includes("Apple"))
+
+// var res=(itCompanies.includes("Apple")) ? "Apple" : "Company Not Found"
+// console.log(res)
