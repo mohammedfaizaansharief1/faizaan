@@ -89,3 +89,16 @@ var big=function(){
     });
 }
 console.log(big())
+
+for(let i=0;i<countries.length;i++){
+    if(countries[i].length == 5){
+        console.log(countries[i])
+    }
+}
+
+var reversearr=[]
+var lenarr=countries.length
+for(i=lenarr-1;i>=0;i--){
+    reversearr.push(countries[i])
+}
+console.log(reversearr)
