@@ -49,6 +49,43 @@ console.log('OP:',op)
 
 console.log()
 var countries=["ALBANIA","BOLIVIA","CANADA","DENMARK","ETHIOPIA","FINLAND","GERMANY","HUNGARY","IRELAND","JAPAN","KENYA"]
-var len=countries.length
-console.log(len)
+// var len=countries.length
+// var arr2=[len]
+// console.log(arr2)
 
+
+// let lnght = '';
+// let longest;
+    
+// for(let i=0; i<countries.length; i++){
+//   if(countries[i].length > lnght) {
+//     let lnght = countries[i].length;
+//     longest = countries[i];
+//   }
+// }
+    
+// console.log(longest);
+
+var countriesLength =[]
+for(let i=0;i<countries.length;i++){
+    var len=countries[i].length;
+    countriesLength.push(len)
+    
+    // countriesLength.push(countries.length)
+}
+console.log(countriesLength)
+
+// var a=Math.max(countriesLength)
+// console.log(a)
+
+var long=countries.reduce(function(a,b){
+    return a.length>b.length ? a:b;
+});
+console.log(long)
+
+var big=function(){
+    return countries.reduce(function(a,b){
+        return a.length>b.length?a:b;
+    });
+}
+console.log(big())
