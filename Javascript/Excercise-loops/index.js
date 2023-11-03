@@ -1,13 +1,15 @@
 console.log('Even Numbers')
+var oddarr=[]
 for(let i=0;i<=101;i++){
     if(i%2==0){
-        console.log(i)
+        oddarr.push(i)
     }
 }
 console.log('Odd Numbers')
+var evenarr=[]
 for(let i=0;i<=101;i++){
     if(i%2!=0){
-        console.log(i)
+        evenarr.push(i)
     }
 }
 
@@ -83,12 +85,12 @@ var long=countries.reduce(function(a,b){
 });
 console.log(long)
 
-var big=function(){
-    return countries.reduce(function(a,b){
-        return a.length>b.length?a:b;
-    });
-}
-console.log(big())
+// var big=function(){
+//     return countries.reduce(function(a,b){
+//         return a.length>b.length?a:b;
+//     });
+// }
+// console.log(big())
 
 for(let i=0;i<countries.length;i++){
     if(countries[i].length == 5){
@@ -101,4 +103,5 @@ var lenarr=countries.length
 for(i=lenarr-1;i>=0;i--){
     reversearr.push(countries[i])
 }
-console.log(reversearr)
+console.log('sorted array:',countries)
+console.log('reverse array:',reversearr)

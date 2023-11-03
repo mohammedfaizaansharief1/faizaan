@@ -45,9 +45,38 @@ var arr1=['Word1','cat','Word3','mat']
 var arr3 = arr1.map((elem)=>{
     return elem.length>3
 })
-console.log(arr3)
+// console.log(arr3)
 
 
-function aoo(arr1){
-    return arr1.
+// function aoo(arr1){
+//     return arr1.length>3;
+// }
+// aoo(arr1)
+
+// var z=arr1.map(aoo)
+// console.log(z)
+
+var arr5=[];
+function getarray(array){
+    for(let i=0;i<array.length;i++){
+        if(array[i].length>3){
+            arr5.push(array[i])
+        }
+    }
 }
+getarray(arr1)
+console.log(arr5)
+
+var cart=['laptop','bag','shoe','maths']
+console.log('cart contains:',cart)
+var updatedarray=[]
+function fun1(item){
+    for(let i=0;i<cart.length;i++){
+        if(item == cart[i]){
+            continue
+        }
+        updatedarray.push(cart[i]);
+    }
+}
+fun1('laptop')
+console.log('updated cart:',updatedarray)
