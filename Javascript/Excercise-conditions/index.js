@@ -47,7 +47,7 @@ function fun1(user,role){
       permission=obj[user].includes(role);
     }
     // return permission;
-    if(permission=true){
+    if(permission==true){
         console.log('Permission granted')
     }
     else{
@@ -55,4 +55,10 @@ function fun1(user,role){
     }   
 }
 
-fun1("guest","read")
+fun1("admin","read")
+fun1("user","read")
+fun1("guest","create")
+
+function new1(prize){
+      
+}
