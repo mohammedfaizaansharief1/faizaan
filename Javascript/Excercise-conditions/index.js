@@ -59,6 +59,16 @@ fun1("admin","read")
 fun1("user","read")
 fun1("guest","create")
 
-function new1(prize){
-      
+// let price=50
+function new1(price){
+      if(price >= 50){
+        let finalprice= (price/100) * 10
+        let actualprice= price - finalprice
+        console.log('Final Price:',actualprice)
+      }
+      else{
+        console.log('No discount is applied')
+      }
 }
+
+new1(60)
