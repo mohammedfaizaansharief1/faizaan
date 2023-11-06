@@ -31,3 +31,28 @@ function fun(a,b,c){
     }
 }
 fun(5,6,1)
+
+
+//2nd Excercise
+
+let obj={
+    admin:['create','read','update','delete'],
+    user:['read','update'],
+    guest:['read']
+}
+// console.log(obj['admin2'])
+function fun1(user,role){
+    let permission=false;
+    if(obj[user]!=undefined){
+      permission=obj[user].includes(role);
+    }
+    // return permission;
+    if(permission=true){
+        console.log('Permission granted')
+    }
+    else{
+        console.log('Permission denied')
+    }   
+}
+
+fun1("guest","read")
