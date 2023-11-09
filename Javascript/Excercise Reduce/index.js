@@ -29,7 +29,7 @@ let newArray = array.reduce((n1,n2)=>{
 },0)
 console.log(newArray)
 
-// 4
+// 4 -- old
 // let transactions = [ { type: "debit", amount: 50 }, { type: "credit",amount: 100 }, { type: "debit", amount: 30 }, ];
 // let acbalancr = transactions.reduce((balance, transactions)=>{
 //     if(transactions.credit){
@@ -41,7 +41,7 @@ console.log(newArray)
 // },0);
 // console.log(acbalancr)
 
-// 4
+// 4 -- new
 let transactions = [
     {debit:50},
     {credit:40},
