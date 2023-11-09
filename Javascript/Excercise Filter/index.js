@@ -43,4 +43,14 @@ let countries = ['INDIA','AMERICA','USA','FRANCE','ITALY','EGYPT']
 console.log(newProducts)
 
 // 5
-let employees = [{adnan:'50000',mansoor:'60000',Mohammed:'90000',Abdullah:'20000'}]
+// let employees = [{adnan:'50000',mansoor:'60000',Abrar_bhai:'90000',Abdullah:'20000'}]
+let employees = [
+   {employee:'Abrar',salary:50000},
+   {employee:'Abdullah',salary:80000},
+   {employee:'Imran',salary:60000},
+   {employee:'Adnan',salary:20000},
+]
+var newemp=employees.filter((w)=>{ 
+   return w.salary>=50000;
+})
+console.log(newemp)
