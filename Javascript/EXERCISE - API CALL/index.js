@@ -9,7 +9,9 @@ function apicall(url,callback){
         console.log("Loading...")
     }
     xhr.onload = function (){
-        console.log(xhr.response)
+        // console.log(xhr.response)
+        callback(xhr.response)
+
     }
     // xhr.open('GET','https://dummyjson.com/products')
     xhr.open('GET',url)
@@ -18,12 +20,10 @@ function apicall(url,callback){
 
 button.addEventListener('click',function(){
     apicall('https://dummyjson.com/users',(data)=>{
-        console.log(data)
-        apicall(`https://dummyjson.com/users/${data.users[1].id}`,(userdata)=>{
-            console.log(userdata)
-            apicall(`https://dummyjson.com/users/${userdata.id}/todos`,(username)=>{
-                console.log(username)
-            })
+        console.log(data.users)
+        data.user.map((e)=>{
+            return el
         })
+
     })
 })
