@@ -22,7 +22,7 @@ button.addEventListener('click',function(){
     apicall('https://dummyjson.com/users',(data)=>{
         console.log(data.users)
         data.user.map((e)=>{
-            return el
+            return e
         })
 
     })
