@@ -45,4 +45,24 @@ apicall('https://dummyjson.com/carts/1')
     console.log(amt)
 })
 .catch((err)=>{console.log('error')})
-.finally((data)=>{console.log("data")})
+// .finally((data)=>{console.log("data")})
+let bl=true;
+let promise=new Promise((res,rej)=>{
+    if(bl){
+        res("asj");
+    }else{
+        rej("rejected")
+    }
+})
+promise
+.then((data)=>{
+    console.log(data)
+    return 34;
+}).then((data1)=>{
+    console.log(data1)
+    return "This is a "
+}).then((data2)=>{
+    console.log(data2)
+}).catch((err)=>{
+    console.log(err)
+})
