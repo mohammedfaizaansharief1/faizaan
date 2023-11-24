@@ -25,7 +25,7 @@ fetch('https://restcountries.com/v2/all')
             return l.name
         })
         // let languages = element.languages
-        let
+        
         listval.innerHTML = `${element.name}
                             ${element.capital}
                             ${langs.toString()}
