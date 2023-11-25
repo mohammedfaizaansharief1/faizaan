@@ -5,6 +5,18 @@ body{
 .container{
     position: relative;
     top: 30vh;
+<<<<<<< HEAD
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: end; */
+    /* display: grid;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: #000000; */
+    /* border: 1px solid black; */
+    width: 250px;
+=======
     height: 250px;
     margin-left: auto;
     margin-right: auto;
@@ -15,6 +27,7 @@ body{
     /* background-color: #000000; */
     border: 1px solid black;
     width: 200px;
+>>>>>>> fee722e0c9016e8c4b8f90e26baaed344ce1c227
     background: transparent;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
@@ -22,4 +35,15 @@ body{
 }
 .first-row button{
     width: 20px;
+<<<<<<< HEAD
+}
+
+.container input{
+   padding: 10px 17px;
+}
+
+#zero{
+    width: 100px;
+=======
+>>>>>>> fee722e0c9016e8c4b8f90e26baaed344ce1c227
 }
