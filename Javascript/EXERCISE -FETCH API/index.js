@@ -1,6 +1,9 @@
 let container = document.querySelector('.container')
-let orderList = document.querySelector('.ordlist')
-// let table = document.querySelector('.table')
+// let orderList = document.querySelector('.ordlist')
+let table = document.querySelector('.table')
+let tbody = document.querySelector('.body')
+// let td = document.querySelector('#1')
+
 
 fetch('https://restcountries.com/v2/all')
 .then((data)=>{
@@ -20,30 +23,43 @@ fetch('https://restcountries.com/v2/all')
     // orderList.innerHTML = `<li>Hi</li><li>Hi</li>`
     
     userData.map(element => {
-        let listval = document.createElement('li')
+        // let listval = document.createElement('li')
         let langs = element.languages.map((l)=>{
             return l.name
         })
         // let languages = element.languages
         
-        listval.innerHTML = `${element.name}
-                            ${element.capital}
-                            ${langs.toString()}
-                            ${element.population}`
+        tbody.innerHTML = document.createElement("tr")
+        tbody.innerHTML = `
+                            <td id="td">${element.name}</td>
+                            <td id="2">${element.capital}</td>
+                            <td id="3">${langs.toString()}</td>
+                            <td id="4">${element.population}</td>`
         
-        orderList.appendChild(listval)
+        
+        
+                            // `${element.name}
+                            // ${element.capital}
+                            // ${langs.toString()}
+                            // ${element.population}`
+        
+        // orderList.appendChild(listval)
+        table.appendChild(tbody)
+
+
+        // td.innerHTML = `<td>${element.name}</td>`
     });
 
-    var table = document.createElement("table")
-    table.setAttribute("id","myTable")
-    document.body.appendChild(table)
+    // var table = document.createElement("table")
+    // table.setAttribute("id","myTable")
+    // document.body.appendChild(table)
 
-    var y = document.createElement("tr")
-    y.setAttribute("id","myTR")
-    document.getElementById("myTable").appendChild(y)
+    // var y = document.createElement("tr")
+    // y.setAttribute("id","myTR")
+    // document.getElementById("myTable").appendChild(y)
 
-    var z = document.createAttribute("td")
-    z.
+    // var z = document.createAttribute("td")
+    // z.
 })
 
 
