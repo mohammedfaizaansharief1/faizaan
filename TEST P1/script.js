@@ -1,4 +1,5 @@
 let string = ""
+let string1 = ""
 // let input = document.querySelector('.input')
 let buttons = document.querySelectorAll('.button')
 
@@ -16,6 +17,12 @@ Array.from(buttons).forEach((button)=>{
             string = string.slice(0,-1)
             document.querySelector('input').value = string;
         }
+        else if(e.target.innerHTML == '%'){
+            string = `${string}%`
+            // string = `${string}`
+            console.log(string)
+            document.querySelector('input').value = string;
+        }
         else{
             console.log(e.target)
             string = string + e.target.innerHTML;
@@ -23,3 +30,5 @@ Array.from(buttons).forEach((button)=>{
         }
     })
 })
+
+// 400*10/100
