@@ -20,7 +20,7 @@ Array.from(buttons).forEach((button)=>{
         }
         else if(e.target.innerHTML == '%'){
             string = `${string}%`
-            
+            // string = (string*10)/100
             // string = `${string}`
             // console.log(string)
             document.querySelector('input').value = string;
