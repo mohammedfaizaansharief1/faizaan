@@ -3,7 +3,10 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Car from './Car'
-
+import NewChild from './NewChild'
+import Button from './Button'
+import Child1 from './Child1'
+import Obj from './Obj'
 //fun={functionProps()}
 function App() {
   let obj ={
@@ -14,12 +17,22 @@ function App() {
       return "This is a function"
     }
   }
+  const funct=()=>{
+    console.log("I am click")
+  }
+  let obj1={
+    name:"Abdullah",
+    age:20
+  }
   return (
     <>
       <h1>Car Brand Name</h1>
       <Car brand="Ford" />
       <Child attr={obj}/>
-      <New s="name"/>
+      <NewChild age="21"/><br></br>
+      <Button at={funct}/><br></br>
+      <Child1 newAtt="Parent Function"/>
+      <Obj attribute={obj1}/>
     </>
   )
 }
@@ -38,6 +51,7 @@ export default App
 //   )
 // }
 
+
 function Child(props){
   return(
     <>  
@@ -48,7 +62,3 @@ function Child(props){
   )
 }
 // export Child
-
-function New(props="string"){
-  return {props}
-}
