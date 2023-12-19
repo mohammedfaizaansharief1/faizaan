@@ -23,8 +23,10 @@ function App() {
       return "This is a function"
     }
   }
+  const [count,setCount] = useState(0)
   const funct=()=>{
     console.log("I am click")
+    setCount(count + 1)
   }
   let obj1={
     name:"Abdullah",
@@ -51,7 +53,7 @@ function App() {
       <Car brand="Ford" />
       <Child attr={obj}/>
       <NewChild age="21"/><br></br>
-      <Button at={funct}/><br></br>
+      <Button at={funct} count={count}/><br></br>
       <Child1 newAtt="Parent Function"/>
       <Obj {...object}/>
 
