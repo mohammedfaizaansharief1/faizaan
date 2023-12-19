@@ -7,8 +7,14 @@ import NewChild from './NewChild'
 import Button from './Button'
 import Child1 from './Child1'
 import Obj from './Obj'
+import Child2 from './Child2'
+import Form from './Form'
+import { useState } from 'react'
+
 //fun={functionProps()}
 function App() {
+  // const [count,setcount] = useState(0);
+
   let obj ={
     num:1,
     str:"String",
@@ -24,6 +30,21 @@ function App() {
     name:"Abdullah",
     age:20
   }
+
+  let object={
+    name:"Shah*$",
+    age:"20"
+  }
+
+  let a=20
+
+  const [parentData,setParentData] = useState("")
+  const sendParentData=()=>{
+    setParentData("This is commig from Parent")
+
+  }
+
+  
   return (
     <>
       <h1>Car Brand Name</h1>
@@ -32,7 +53,14 @@ function App() {
       <NewChild age="21"/><br></br>
       <Button at={funct}/><br></br>
       <Child1 newAtt="Parent Function"/>
-      <Obj attribute={obj1}/>
+      <Obj {...object}/>
+
+      {/* conditional rendering */}
+      {a%2==0 ? <Child2/> :<p>No</p>} 
+
+      {/* Q-8 */}
+      <button onClick={sendParentData}>Send data from child</button>
+      <Form parentData={parentData}/>
     </>
   )
 }
