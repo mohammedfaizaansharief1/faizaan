@@ -7,19 +7,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='container'>
     {/* create different component for all  */}
-      <div className='container'>
-        <div className="childContainer">
-          <div className="left">
-
-          </div>
-          <div className="right">
-
-          </div>
-        </div>
-      </div>
-    </>
+      
+    </div>
   )
 }
 
