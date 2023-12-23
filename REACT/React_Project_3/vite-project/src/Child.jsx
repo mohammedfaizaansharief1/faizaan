@@ -5,7 +5,7 @@ import Right from './Right'
 
 export default function Child() {
   return (
-    <div className='childContainer'>
+    <div className='childContainer p-[100px]'>
       <Left />
       <Right />
     </div>
