@@ -4,12 +4,14 @@ import React from 'react'
 function Navbar() {
   return (
     <div>
-      <div className="container bg-red-500 w-full">
+      <div className="container bg-red-500  h-12 p-10 max-w-7xl">
         <div className="logo">
             logo
         </div>
         <div className="links">
-            <a href="a">ashd</a>
+            <a href="a">About</a>
+            <a href="a">Contact</a>
+            <a href="a">Blog</a>
         </div>
       </div>
     </div>
