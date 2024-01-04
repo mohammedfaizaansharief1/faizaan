@@ -1,0 +1,9 @@
+.icons{
+    display: flex;
+    width: 184px;
+    height: 28px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    /* background-color: #111111; */
+}
