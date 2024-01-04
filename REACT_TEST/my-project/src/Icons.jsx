@@ -15,3 +15,7 @@ const Icons = () => {
 }
 
 export default Icons
+
+// Instead of /public/wishlish.png, use /wishlish.png.
+// Files in the public directory are served at the root path.
+// Instead of /public/bag.png, use /bag.png.
