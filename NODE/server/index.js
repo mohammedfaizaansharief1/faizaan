@@ -1,8 +1,19 @@
 const http= require('http')
 
-const server = http.createServer()
+const server = http.createServer(handler)
 const port = 2000
 
-server.listen(port)
+function handler(req, res) {
+    if(req.url == '/home'){
+        res.write("Home")
+        res.end
+    }
+    if(req.url == '/about'){
+        res.write("about")
+        res.end
+    }
+}
 
-console.log("server listening on port",port)
+server.listen(port,()=>{
+    console.log("server listening on port",port)
+})
