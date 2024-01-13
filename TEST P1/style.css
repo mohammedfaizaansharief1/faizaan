@@ -1,0 +1,147 @@
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99vw;
+    height: 98vh;
+    background-color: aqua;
+}
+.container{
+    background-color: antiquewhite;
+    border: 1px solid;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    width: 24vw;
+    height: 53vh;
+    border-radius: 10px;
+}
+.input{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* padding: 10px; */
+    margin: 10px;
+    width: 93%;
+    /* border: 1px solid red; */
+}
+.input-text{
+    height: 50px;
+    width: 420px;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: right;
+    border-radius: 10px;
+}
+.row{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    /* border: 1px solid; */
+}
+.button{   
+    width: 100px;
+    font-size: 1.6rem;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 1px solid; */
+    cursor: pointer;
+}
+.zero{
+    width: 210px;
+    text-align: right;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+@media (min-width: 0px) and (max-width: 480px){
+    body{
+        margin: 0;
+    }
+    .main-container{
+        background-color: blue;
+        width: 100vw;
+        height: 100vh;
+    }
+    .container{
+        width: 350px;
+        height: 54vh;
+    }
+    .button{   
+        /* width: 100px; */
+        font-size: 1.2rem;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .row{
+        margin: 10px;
+        gap: 2;
+        padding-bottom: 0;
+    }
+    .zero{
+        width: 250px;
+        text-align: right;
+    }
+    .input-text{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    body{
+        margin: 0;
+    }
+    .main-container{
+        background-color: red;
+        width: 100vw;
+        height: 100vh;
+    }
+    .container{
+        width: 60vw;
+        height: 54vh;
+    }
+    .button{   
+        /* width: 100px; */
+        font-size: 1.2rem;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .row{
+        margin: 10px;
+        gap: 2;
+        padding-bottom: 0;
+    }
+    .zero{
+        width: 210px;
+        text-align: right;
+    }
+    .input-text{
+        margin-top: 0;
+        width: 55vw;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    html{
+        overflow: hidden;
+    }
+    body{
+        margin: 0;
+        overflow: hidden;
+    }
+    .main-container{
+        background-color: aqua;
+        width: 100vw;
+        height: 100vh;
+    }
+    .container{
+        width: 448px;
+        height: 58vh;
+    }
+}

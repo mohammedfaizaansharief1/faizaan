@@ -1,0 +1,109 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    /* background-color: beige; */
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+}
+body{
+    /* background-image: linear-gradient(to right, blueviolet, green, yellow); */
+    /* background-color: #8EC5FC; */
+    /* background-image: linear-gradient(to right, #8EC5FC 0%, #E0C3FC 100%); */
+    /* background-image: linear-gradient(to right,orange,green,violet); */
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.d{
+    display: flex;
+    margin-right: 50px;
+}
+section p{
+    margin-left: 50px;
+}
+button>a{
+    text-decoration: none;
+    background: none;
+    color:brown;
+}
+
+content: "2192";
+
+button{
+    padding: 8px;
+    background-color: yellow;
+    border: none;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+button>a:hover{
+    color: white;
+}
+section p::first-letter{
+    font-size: xx-large;
+    /* font-variant: small-caps; */
+}
+#img-bott{
+    height: 500px;
+    width: 800px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+#img-bott:hover{
+    box-shadow: 1px 1px 10px black;
+}
+/* .img2{
+    height: 500px;
+    width: 600px;
+    border-radius: 5px;
+    margin-right: 10px;
+} */
+.img3{
+    height: 500px;
+    width: 300px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.img3:hover{
+    box-shadow: 1px 1px 10px black;
+}
+.img4{
+    border-radius: 5px;
+    height: 500px;
+}
+.img4:hover{
+    box-shadow: 1px 1px 10px black;
+}
+.pclass{
+    color: aqua;
+}
+#pid{
+    color: blueviolet ;
+}
+#pid::before{
+    content: "Starting paragraph";
+    font-size: small;
+}
+.pclass::after{
+    content: "ending paragraph";
+    font-size: small;
+}
+.p2class{
+    color:darkorange !important;
+}
+div{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#img5{
+    /* height: 500px; */
+    width: 800px;
+}
+#img6{
+    margin-left: 20px;
+}

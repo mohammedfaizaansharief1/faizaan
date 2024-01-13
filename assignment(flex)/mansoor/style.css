@@ -1,0 +1,86 @@
+*{
+    font-size: large;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(112, 216, 216);
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+}
+
+.watch {
+    height: 400px;
+    width: 20%;
+    border-radius: 2%;
+    background-color: rgb(227, 247, 247);
+    box-shadow: 1px 1px 20px 14px greenyellow;
+    padding: 2px 2px;
+    position: relative;
+}
+
+.watch img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+}
+
+.watch p{
+    padding: 4px 22px;
+    font-size: 113%;
+    text-align: center;
+}
+
+.watch span{
+    text-align: center;
+    margin-left: 8%;
+}
+
+#watchmrp{
+   font-size: 80%; 
+}
+
+#watchamt{
+    text-decoration: line-through;
+    font-size: 80%;
+}
+
+#watchdis{
+    font-size: 80%;
+}
+
+.btn{
+    justify-content: center;
+    background-color: #b12704;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #d68d7a;
+}
+.watch-amt a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: #b12704;
+    border-radius: 5px;
+}
+.watch-amt a:hover{
+    background-color: black;
+    color: white;
+}
+.icon{
+    display: flex;
+    position: absolute;
+    margin-left: 325px;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+    border-radius: 100%;
+    padding: 8px;
+    background-color: white;
+}

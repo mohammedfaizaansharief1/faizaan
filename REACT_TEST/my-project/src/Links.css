@@ -1,0 +1,10 @@
+.links{
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+
+}
+/* display: flex;
+padding-right: 8px;
+align-items: flex-start;
+gap: 32px; */

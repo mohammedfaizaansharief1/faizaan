@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="screen">
+            <input type="text" class="display">
+        </div>
+
+        <div class="first-row">
+            <input type="button" value="C" onclick="clr()">
+            <input type="button" value="D"onclick=>
+            <input type="button" value="%" onclick=result(value)>
+            <input type="button" value="/" onclick=result(value)>
+        </div>
+
+        <div class="second-row">
+        <input type="button" value="7" onclick=result(value)>
+        <input type="button" value="8" onclick=result(value)>
+        <input type="button" value="9" onclick=result(value)>
+        <input type="button" value="x" onclick=result(value)>
+        </div>
+
+        <div class="third-row">
+            <input type="button" value="4" onclick=result(value)>
+            <input type="button" value="5" onclick=result(value)>
+            <input type="button" value="6" onclick=result(value)>
+            <input type="button" value="-" onclick=result(value)>
+        </div>
+
+        <div class="fourth-row">
+            <input type="button" value="1" onclick=result(value)>
+            <input type="button" value="2" onclick=result(value)>
+            <input type="button" value="3" onclick=result(value)>
+            <input type="button" value="+" onclick=result(value)>
+        </div>
+
+        <div class="fifth-row"> 
+            <input type="button" value="0" id='zero' onclick=result(value)>
+            <input type="button" value="." onclick=result(value)>
+            <input type="button" value="=" onclick=result(value)>
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
