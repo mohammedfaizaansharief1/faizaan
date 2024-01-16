@@ -1,16 +1,23 @@
 const express = require('express')
 const app = express()
 let fs = require('fs')
-let data = fs.readFileSync('./index.html')
+var data = fs.readFileSync('./public/index.html')
+const path = require('path')
+app.use('/home', express.static(path.join(__dirname, 'public')))
 
 const port = 3000
 // const port = 65535
 
 app.get('/', (req, res) => {
   // res.send(data)
-  res.send('get!')
+  res.send("data")
   res.end()
 })
+app.get('/static', function(req, res) {
+  res.sendFile(__dirname + "/public/index.html")
+  // res.sendFile(__dirname + "/style.css")
+});
+// app.use(express.static('public'))
 
 // app.get('/profile/:username', (req, res) => {
   //   const username = req.params.username
